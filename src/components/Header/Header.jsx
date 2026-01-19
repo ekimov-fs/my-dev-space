@@ -1,5 +1,5 @@
 import './Header.css'
-function Header(props) {
+function Header({handleOpenModal}) {
     return (
         <>
             <header>
@@ -10,10 +10,19 @@ function Header(props) {
                 <a>Отзывы</a>
                 </div>
 
-                <button className='btn'>Связаться</button>
+                <button onClick={handleOpenModal} className='btn'>Связаться</button>
 
-                <a href="https://t.me/javascript_tricker" target='_blank' className='icon telegram'/>
-                <a href="https://t.me/javascript_tricker" target='_blank' className='icon instagram'/>
+                <a 
+                    href="https://t.me/javascript_tricker" 
+                    target='_blank' 
+                    className='icon telegram'
+                />
+                
+                <a 
+                    href="https://t.me/javascript_tricker" 
+                    target='_blank' 
+                    className='icon instagram'
+                />
 
                 <div className="switch">
                 <div className="theme light"></div>
